@@ -1,12 +1,12 @@
 # molecule-ansible-google-cloud
-[![Build Status](https://travis-ci.org/jonashackt/molecule-ansible-google-cloud.svg?branch=master)](https://travis-ci.org/jonashackt/molecule-ansible-google-cloud)
+[![Build Status](https://travis-ci.org/dragonmstr/molecule-ansible-google-cloud.svg?branch=master)](https://travis-ci.org/dragonmstr/molecule-ansible-google-cloud)
 [![versionansible](https://img.shields.io/badge/ansible-2.8.4-brightgreen.svg)](https://docs.ansible.com/ansible/latest/index.html)
 [![versionmolecule](https://img.shields.io/badge/molecule-2.22-brightgreen.svg)](https://molecule.readthedocs.io/en/latest/)
 [![versiontestinfra](https://img.shields.io/badge/testinfra-3.1.0-brightgreen.svg)](https://testinfra.readthedocs.io/en/latest/)
 
 Example projects showing how to do test-driven development of Ansible roles and running those tests on multiple Cloud providers at the same time
 
-This project build on top of [molecule-ansible-docker-vagrant](https://github.com/jonashackt/molecule-ansible-docker-vagrant), where all the basics on how to do test-driven development of Ansible roles with Molecule is described. Have a look into the blog series so far:
+This project build on top of [molecule-ansible-docker-vagrant](https://github.com/dragonmstr/molecule-ansible-docker-vagrant), where all the basics on how to do test-driven development of Ansible roles with Molecule is described. Have a look into the blog series so far:
 
 * [Test-driven infrastructure development with Ansible & Molecule](https://blog.codecentric.de/en/2018/12/test-driven-infrastructure-ansible-molecule/)
 * [Continuous Infrastructure with Ansible, Molecule & TravisCI](https://blog.codecentric.de/en/2018/12/continuous-infrastructure-ansible-molecule-travisci/)
@@ -28,7 +28,7 @@ So let's pick some more providers so that we can safely speak about going 'Multi
 * We already know [how to use Molecule with AWS EC2](https://blog.codecentric.de/en/2019/01/ansible-molecule-travisci-aws/). 
 
 
-Let's start with AWS by just forking [molecule-ansible-docker-vagrant](https://github.com/jonashackt/molecule-ansible-docker-vagrant), since there should be mostly everything needed to use Molecule with AWS.
+Let's start with AWS by just forking [molecule-ansible-docker-vagrant](https://github.com/dragonmstr/molecule-ansible-docker-vagrant), since there should be mostly everything needed to use Molecule with AWS.
 
 This should run in no time :)
 
@@ -283,8 +283,8 @@ We can now encrypt our json key file with the `travis encrypt-file` command:
 
 ```
 $ travis encrypt-file testproject-233213-45d56e1b7fc5.json 
-Detected repository as jonashackt/molecule-ansible-aws-gcp-azure, is this correct? |yes| yes
-encrypting testproject-233213-45d56e1b7fc5.json for jonashackt/molecule-ansible-aws-gcp-azure
+Detected repository as dragonmstr/molecule-ansible-aws-gcp-azure, is this correct? |yes| yes
+encrypting testproject-233213-45d56e1b7fc5.json for dragonmstr/molecule-ansible-aws-gcp-azure
 storing result as testproject-233213-45d56e1b7fc5.json.enc
 storing secure env variables for decryption
 
